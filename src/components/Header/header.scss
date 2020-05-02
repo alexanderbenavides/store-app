@@ -1,0 +1,66 @@
+@import "../../scss/_breakpoints.scss";
+.header-default {
+  section.logo-company {
+    background-color: #f8f9fa;
+    padding: 0.5rem 0;
+    text-align: center;
+    @include media(sm) {
+      text-align: initial;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+    .icons {
+      text-align: center;
+      display: none;
+      @include media(sm) {
+        display: block;
+      }
+      .networks {
+        color: #ffc107;
+        cursor: pointer;
+        &:first-of-type {
+          margin-right: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .wishlist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    @include media(sm) {
+      margin: 0 6rem;
+    }
+
+    img {
+      height: 60px;
+    }
+    input {
+      border-radius: 1rem;
+      border: 0;
+      border: 1px solid #91c3cb;
+      outline: 0;
+      padding: 0.5rem 0 0.5rem 0.5rem;
+      width: 80%;
+    }
+    .icons-purchase {
+      div {
+        display: flex;
+        align-items: center;
+      }
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.5rem;
+      cursor: pointer;
+      svg {
+        color: #ffc107;
+      }
+    }
+  }
+}
+
+.header-fixed {
+  background-color: red;
+}
