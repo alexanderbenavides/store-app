@@ -6,7 +6,7 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import AddShoppingCartIcon from "@material-ui/icons/AddShoppingCart";
 
 import "./header.scss";
-const logo = require("../../img/logo_store.svg");
+const logo = require("../../assets/logo_store.svg");
 
 function HeaderDefault() {
   return (
